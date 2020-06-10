@@ -1292,6 +1292,14 @@ Source: PIC24FJ16GA002.bsd</description>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<wire x1="662.94" y1="-78.74" x2="662.94" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="662.94" y1="-17.78" x2="698.5" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="3"/>
+<wire x1="698.5" y1="-17.78" x2="698.5" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
