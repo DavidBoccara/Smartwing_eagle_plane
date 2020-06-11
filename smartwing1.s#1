@@ -9689,7 +9689,7 @@ Source: PIC24FJ16GA002.bsd</description>
 <instance part="P+10" gate="VCC" x="728.98" y="10.16" smashed="yes">
 <attribute name="VALUE" x="728.98" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X_11" gate="G$1" x="716.28" y="17.78" smashed="yes" rot="R270"/>
+<instance part="X_11" gate="G$1" x="703.58" y="17.78" smashed="yes" rot="R270"/>
 <instance part="X_12" gate="G$1" x="838.2" y="30.48" smashed="yes" rot="R90"/>
 <instance part="C9" gate="G$1" x="873.76" y="50.8" smashed="yes">
 <attribute name="NAME" x="875.284" y="51.181" size="1.778" layer="95"/>
@@ -10021,7 +10021,7 @@ Source: PIC24FJ16GA002.bsd</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="731.52" y1="17.78" x2="723.9" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="X_11" gate="G$1" pin="0"/>
-<wire x1="716.28" y1="17.78" x2="723.9" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="703.58" y1="17.78" x2="723.9" y2="17.78" width="0.1524" layer="91"/>
 <label x="718.82" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>

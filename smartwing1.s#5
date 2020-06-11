@@ -70,6 +70,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -1024,6 +1025,72 @@ Source: PIC24FJ16GA002.bsd</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ngspice-simulation" urn="urn:adsk.eagle:library:527439">
+<description>SPICE compatible library parts</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="0" urn="urn:adsk.eagle:symbol:527455/1" library_version="18">
+<description>Simulation ground symbol (spice node 0)</description>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="0" x="0" y="0" visible="off" length="point" direction="sup"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:527478/1" prefix="X_" library_version="18">
+<description>Simulation ground symbol (spice node 0)</description>
+<gates>
+<gate name="G$1" symbol="0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="SPICEGROUND" value=""/>
+<attribute name="_EXTERNAL_" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1049,6 +1116,8 @@ Source: PIC24FJ16GA002.bsd</description>
 </part>
 <part name="ESC1" library="826926-3" deviceset="826926-3" device="" value=""/>
 <part name="U3" library="SAM_M8Q" deviceset="SAM-M8Q" device=""/>
+<part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1089,26 +1158,84 @@ Source: PIC24FJ16GA002.bsd</description>
 <attribute name="NAME" x="790.2956" y="-6.1214" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="789.6606" y="-8.6614" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
+<instance part="X_1" gate="G$1" x="840.74" y="78.74" smashed="yes" rot="R180"/>
+<instance part="P+1" gate="VCC" x="835.66" y="81.28" smashed="yes">
+<attribute name="VALUE" x="833.12" y="78.74" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="GND" class="0">
 <segment>
+<pinref part="SERVOMOTEUR2" gate="G$1" pin="1"/>
+<wire x1="848.36" y1="27.94" x2="838.2" y2="27.94" width="0.1524" layer="91"/>
+<label x="843.28" y="27.94" size="1.778" layer="95"/>
+<pinref part="SERVOMOTEUR1" gate="G$1" pin="1"/>
+<wire x1="848.36" y1="48.26" x2="840.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="843.28" y="48.26" size="1.778" layer="95"/>
 <pinref part="ESC1" gate="G$1" pin="1"/>
-<wire x1="802.64" y1="76.2" x2="802.64" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="802.64" y1="76.2" x2="802.64" y2="58.42" width="0.1524" layer="91"/>
+<label x="795.02" y="73.66" size="1.778" layer="95"/>
+<wire x1="802.64" y1="58.42" x2="838.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="838.2" y1="58.42" x2="840.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="840.74" y1="58.42" x2="840.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="840.74" y1="48.26" x2="840.74" y2="58.42" width="0.1524" layer="91"/>
+<junction x="840.74" y="58.42"/>
+<wire x1="838.2" y1="27.94" x2="838.2" y2="58.42" width="0.1524" layer="91"/>
+<junction x="838.2" y="58.42"/>
+<pinref part="X_1" gate="G$1" pin="0"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="ESC1" gate="G$1" pin="2"/>
-<wire x1="805.18" y1="76.2" x2="805.18" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
+<net name="S" class="0">
 <segment>
 <pinref part="ESC1" gate="G$1" pin="3"/>
 <wire x1="807.72" y1="76.2" x2="807.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="807.72" y="73.66" size="1.778" layer="95"/>
+<wire x1="807.72" y1="63.5" x2="764.54" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="764.54" y1="63.5" x2="764.54" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="RB0"/>
+<wire x1="764.54" y1="38.1" x2="767.08" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERVOMOTEUR1" gate="G$1" pin="3"/>
+<label x="843.28" y="43.18" size="1.778" layer="95"/>
+<wire x1="848.36" y1="43.18" x2="830.58" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="830.58" y1="43.18" x2="830.58" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="830.58" y1="53.34" x2="762" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="762" y1="53.34" x2="762" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="RB1"/>
+<wire x1="762" y1="35.56" x2="767.08" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERVOMOTEUR2" gate="G$1" pin="3"/>
+<label x="843.28" y="22.86" size="1.778" layer="95"/>
+<wire x1="848.36" y1="22.86" x2="833.12" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="833.12" y1="22.86" x2="833.12" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="833.12" y1="50.8" x2="759.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="759.46" y1="50.8" x2="759.46" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="RB2"/>
+<wire x1="759.46" y1="33.02" x2="767.08" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="ESC1" gate="G$1" pin="2"/>
+<wire x1="805.18" y1="76.2" x2="805.18" y2="60.96" width="0.1524" layer="91"/>
+<label x="802.64" y="73.66" size="1.778" layer="95"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="805.18" y1="60.96" x2="835.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="835.66" y1="60.96" x2="835.66" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SERVOMOTEUR2" gate="G$1" pin="2"/>
+<wire x1="848.36" y1="25.4" x2="835.66" y2="25.4" width="0.1524" layer="91"/>
+<label x="843.28" y="25.4" size="1.778" layer="95"/>
+<wire x1="835.66" y1="25.4" x2="835.66" y2="45.72" width="0.1524" layer="91"/>
+<junction x="835.66" y="60.96"/>
+<pinref part="SERVOMOTEUR1" gate="G$1" pin="2"/>
+<wire x1="835.66" y1="45.72" x2="835.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="848.36" y1="45.72" x2="835.66" y2="45.72" width="0.1524" layer="91"/>
+<label x="843.28" y="45.72" size="1.778" layer="95"/>
+<junction x="835.66" y="45.72"/>
 </segment>
 </net>
 </nets>
