@@ -9795,12 +9795,21 @@ Source: PIC24FJ64GA002.bsd</description>
 <part name="X_14" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U$1" library="2S_AW_lib" deviceset="992_MPL115A2" device=""/>
 <part name="U$2" library="2S_AW_lib" deviceset="MIKROE-2045" device=""/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="075-032X103" package3d_urn="urn:adsk.eagle:package:23646/1" value="0.1uF"/>
+<part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="075-032X103" package3d_urn="urn:adsk.eagle:package:23646/1" value="0.1uF"/>
+<part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="975.36" y="-193.04" size="1.778" layer="91">V1.0.0</text>
 <text x="739.14" y="137.16" size="1.778" layer="91" grouprefs="ALIM">VCC = 3v3</text>
+<text x="947.42" y="-175.26" size="1.778" layer="91">2S8</text>
+<text x="952.5" y="-200.66" size="1.778" layer="91">14/06/2020</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="487.68" y="-203.2" smashed="yes"/>
@@ -9852,8 +9861,8 @@ Source: PIC24FJ64GA002.bsd</description>
 <attribute name="VALUE" x="604.52" y="55.88" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R1" gate="G$1" x="899.16" y="0" smashed="yes" rot="R90" grouprefs="REST">
-<attribute name="NAME" x="897.6614" y="-3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="902.462" y="-3.81" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="897.6614" y="-1.27" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="902.462" y="-1.27" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="899.16" y="-10.16" smashed="yes" rot="R90" grouprefs="REST">
 <attribute name="NAME" x="897.6614" y="-13.97" size="1.778" layer="95" rot="R90"/>
@@ -9938,8 +9947,8 @@ Source: PIC24FJ64GA002.bsd</description>
 <attribute name="VALUE" x="861.06" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C3" gate="G$1" x="858.52" y="10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="858.139" y="11.684" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="863.219" y="11.684" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="856.996" y="12.319" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="867.156" y="12.319" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="688.34" y="-22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="686.816" y="-23.241" size="1.778" layer="95" rot="R180"/>
@@ -9952,14 +9961,31 @@ Source: PIC24FJ64GA002.bsd</description>
 <attribute name="VALUE" x="675.64" y="-12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X_14" gate="G$1" x="708.66" y="15.24" smashed="yes" rot="R270"/>
-<instance part="U$1" gate="G$1" x="825.5" y="-116.84" smashed="yes">
-<attribute name="NAME" x="820.42" y="-111.76" size="1.778" layer="95"/>
-<attribute name="VALUE" x="820.42" y="-116.84" size="1.778" layer="96"/>
+<instance part="U$1" gate="G$1" x="825.5" y="-127" smashed="yes">
+<attribute name="NAME" x="820.42" y="-121.92" size="1.778" layer="95"/>
+<attribute name="VALUE" x="820.42" y="-127" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="894.08" y="-129.54" smashed="yes">
-<attribute name="NAME" x="889" y="-121.92" size="1.778" layer="95"/>
-<attribute name="VALUE" x="889" y="-127" size="1.778" layer="96"/>
+<instance part="U$2" gate="G$1" x="916.94" y="-88.9" smashed="yes">
+<attribute name="NAME" x="911.86" y="-81.28" size="1.778" layer="95"/>
+<attribute name="VALUE" x="911.86" y="-86.36" size="1.778" layer="96"/>
 </instance>
+<instance part="C5" gate="G$1" x="840.74" y="-157.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="842.264" y="-159.639" size="1.778" layer="95"/>
+<attribute name="VALUE" x="839.724" y="-162.179" size="1.778" layer="96"/>
+</instance>
+<instance part="X_1" gate="G$1" x="835.66" y="-167.64" smashed="yes"/>
+<instance part="P+11" gate="VCC" x="848.36" y="-152.4" smashed="yes" rot="R270">
+<attribute name="VALUE" x="845.82" y="-149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="C12" gate="G$1" x="881.38" y="-101.6" smashed="yes">
+<attribute name="NAME" x="877.316" y="-101.981" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="877.316" y="-104.521" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X_15" gate="G$1" x="894.08" y="-109.22" smashed="yes"/>
+<instance part="P+12" gate="VCC" x="881.38" y="-93.98" smashed="yes">
+<attribute name="VALUE" x="883.92" y="-91.44" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X_16" gate="G$1" x="942.34" y="-109.22" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10059,6 +10085,23 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="688.34" y1="-17.78" x2="688.34" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="688.34" y="-10.16"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="843.28" y1="-149.86" x2="843.28" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
+<wire x1="843.28" y1="-152.4" x2="843.28" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="845.82" y1="-152.4" x2="843.28" y2="-152.4" width="0.1524" layer="91"/>
+<junction x="843.28" y="-152.4"/>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="894.08" y1="-99.06" x2="881.38" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="P+12" gate="VCC" pin="VCC"/>
+<wire x1="881.38" y1="-96.52" x2="881.38" y2="-99.06" width="0.1524" layer="91"/>
+<junction x="881.38" y="-99.06"/>
+<pinref part="U$2" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -10092,7 +10135,7 @@ Source: PIC24FJ64GA002.bsd</description>
 <segment>
 <pinref part="X_12" gate="G$1" pin="0"/>
 <wire x1="858.52" y1="5.08" x2="850.9" y2="5.08" width="0.1524" layer="91"/>
-<label x="855.98" y="2.54" size="1.778" layer="95" rot="R270"/>
+<label x="861.06" y="5.08" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="DISVREG"/>
 </segment>
 <segment>
@@ -10104,8 +10147,31 @@ Source: PIC24FJ64GA002.bsd</description>
 <segment>
 <pinref part="X_14" gate="G$1" pin="0"/>
 <wire x1="708.66" y1="15.24" x2="721.36" y2="15.24" width="0.1524" layer="91"/>
-<label x="716.28" y="17.78" size="1.778" layer="95" rot="R90"/>
+<label x="703.58" y="12.7" size="1.778" layer="95" rot="R90"/>
 <pinref part="IC3" gate="G$1" pin="VSS@1"/>
+</segment>
+<segment>
+<pinref part="X_1" gate="G$1" pin="0"/>
+<label x="835.66" y="-165.1" size="1.778" layer="95" rot="R180"/>
+<wire x1="835.66" y1="-149.86" x2="835.66" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="835.66" y1="-162.56" x2="835.66" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="835.66" y1="-157.48" x2="835.66" y2="-162.56" width="0.1524" layer="91"/>
+<junction x="835.66" y="-162.56"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X_15" gate="G$1" pin="0"/>
+<label x="896.62" y="-111.76" size="1.778" layer="95" rot="R180"/>
+<wire x1="894.08" y1="-104.14" x2="894.08" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="894.08" y1="-106.68" x2="894.08" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="881.38" y1="-106.68" x2="894.08" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="894.08" y="-106.68"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<label x="944.88" y="-111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PIN1" class="0">
@@ -10164,6 +10230,12 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="X_11" gate="G$1" pin="0"/>
 <wire x1="863.6" y1="10.16" x2="871.22" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="871.22" y1="10.16" x2="871.22" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND2"/>
+<wire x1="939.8" y1="-104.14" x2="942.34" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="X_16" gate="G$1" pin="0"/>
+<wire x1="942.34" y1="-104.14" x2="942.34" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCLR" class="0">
@@ -10349,18 +10421,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="721.36" y1="40.64" x2="708.66" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="AN4/C1INB/DPLN/SDA2/RP2/PMD2/CN6/RB2"/>
-<wire x1="721.36" y1="25.4" x2="708.66" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="AN5/C1INA/DMLN/RTCC/SCL2/RP3/PMWR/CN7/RB3"/>
-<wire x1="721.36" y1="20.32" x2="708.66" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OSCI/CLKI/C1IND/PMCS1/CN30/RA2"/>
@@ -10385,16 +10445,16 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="850.9" y1="-10.16" x2="863.6" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="TCK/USBOEN/SCL1/RP8/PMD4/CN22/RB8"/>
-<wire x1="850.9" y1="-5.08" x2="863.6" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
+<net name="MPL_SDA" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="TDO/SDA1/RP9/PMD3/RCV/CN21/RB9"/>
 <wire x1="850.9" y1="0" x2="863.6" y2="0" width="0.1524" layer="91"/>
+<label x="863.6" y="2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
+<label x="817.88" y="-152.4" size="1.778" layer="95" rot="R270"/>
+<wire x1="820.42" y1="-149.86" x2="820.42" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -10407,6 +10467,32 @@ Source: PIC24FJ64GA002.bsd</description>
 <segment>
 <pinref part="IC3" gate="G$1" pin="VUSB"/>
 <wire x1="850.9" y1="25.4" x2="863.6" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MPL_SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
+<wire x1="828.04" y1="-149.86" x2="828.04" y2="-165.1" width="0.1524" layer="91"/>
+<label x="825.5" y="-152.4" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="TCK/USBOEN/SCL1/RP8/PMD4/CN22/RB8"/>
+<wire x1="850.9" y1="-5.08" x2="863.6" y2="-5.08" width="0.1524" layer="91"/>
+<label x="863.6" y="-2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPS_TX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="TX"/>
+<wire x1="939.8" y1="-78.74" x2="952.5" y2="-78.74" width="0.1524" layer="91"/>
+<label x="952.5" y="-76.2" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPS_RX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="RX"/>
+<wire x1="939.8" y1="-83.82" x2="952.5" y2="-83.82" width="0.1524" layer="91"/>
+<label x="952.5" y="-81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
