@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9699,7 +9699,7 @@ Source: PIC24FJ64GA002.bsd</description>
 <instance part="P+10" gate="VCC" x="673.1" y="-10.16" smashed="yes" rot="R90">
 <attribute name="VALUE" x="675.64" y="-12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X_14" gate="G$1" x="713.74" y="15.24" smashed="yes" rot="R270"/>
+<instance part="X_14" gate="G$1" x="708.66" y="15.24" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9843,7 +9843,7 @@ Source: PIC24FJ64GA002.bsd</description>
 </segment>
 <segment>
 <pinref part="X_14" gate="G$1" pin="0"/>
-<wire x1="713.74" y1="15.24" x2="721.36" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="708.66" y1="15.24" x2="721.36" y2="15.24" width="0.1524" layer="91"/>
 <label x="716.28" y="17.78" size="1.778" layer="95" rot="R90"/>
 <pinref part="IC3" gate="G$1" pin="VSS@1"/>
 </segment>
