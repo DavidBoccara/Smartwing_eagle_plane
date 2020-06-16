@@ -10484,15 +10484,15 @@ Source: PIC24FJ64GA002.bsd</description>
 <net name="GPS_TX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TX"/>
-<wire x1="939.8" y1="-78.74" x2="957.58" y2="-78.74" width="0.1524" layer="91"/>
-<label x="957.58" y="-76.2" size="1.778" layer="95" rot="R180"/>
+<wire x1="939.8" y1="-78.74" x2="952.5" y2="-78.74" width="0.1524" layer="91"/>
+<label x="952.5" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="GPS_RX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="RX"/>
-<wire x1="939.8" y1="-83.82" x2="957.58" y2="-83.82" width="0.1524" layer="91"/>
-<label x="957.58" y="-81.28" size="1.778" layer="95" rot="R180"/>
+<wire x1="939.8" y1="-83.82" x2="952.5" y2="-83.82" width="0.1524" layer="91"/>
+<label x="952.5" y="-81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
