@@ -416,12 +416,12 @@
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="SEN0142">
-<smd name="1" x="-1.143" y="0.6096" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
-<smd name="2" x="-1.143" y="-1.905" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
-<smd name="4" x="1.143" y="-1.8796" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
-<smd name="5" x="1.143" y="-0.635" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
-<smd name="6" x="1.143" y="0.635" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
-<smd name="7" x="1.143" y="1.8796" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="1_AUX_DA" x="-1.143" y="0.6096" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="2_AUX_CL" x="-1.143" y="-1.905" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="4_GND" x="1.143" y="-1.8796" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="5_SDA" x="1.143" y="-0.635" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="6_SCL" x="1.143" y="0.635" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="7_INT" x="1.143" y="1.8796" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
 <wire x1="-0.3556" y1="2.3622" x2="-0.2286" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="-1.4986" y1="-3.7592" x2="1.4986" y2="-3.7592" width="0.1524" layer="21"/>
 <wire x1="1.4986" y1="2.4892" x2="-1.4986" y2="2.4892" width="0.1524" layer="21"/>
@@ -442,7 +442,7 @@
 <text x="-2.921" y="2.2352" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-4.6482" y="-6.7818" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="3.175" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="3" x="1.143" y="-3.1496" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
+<smd name="3_VIN" x="1.143" y="-3.1496" dx="0.508" dy="1.0922" layer="1" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -668,15 +668,6 @@
 </gates>
 <devices>
 <device name="" package="SEN0142">
-<connects>
-<connect gate="U2" pin="AUX_CL" pad="2"/>
-<connect gate="U2" pin="AUX_DA" pad="1"/>
-<connect gate="U2" pin="GND" pad="4"/>
-<connect gate="U2" pin="INT" pad="7"/>
-<connect gate="U2" pin="SCL" pad="6"/>
-<connect gate="U2" pin="SDA" pad="5"/>
-<connect gate="U2" pin="VIN" pad="3"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
