@@ -9801,6 +9801,7 @@ Source: PIC24FJ64GA002.bsd</description>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="075-032X103" package3d_urn="urn:adsk.eagle:package:23646/1" value="0.1uF"/>
 <part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9981,9 +9982,10 @@ Source: PIC24FJ64GA002.bsd</description>
 <attribute name="VALUE" x="877.316" y="-104.521" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X_15" gate="G$1" x="894.08" y="-109.22" smashed="yes"/>
-<instance part="P+12" gate="VCC" x="878.84" y="-93.98" smashed="yes">
-<attribute name="VALUE" x="881.38" y="-91.44" size="1.778" layer="96" rot="R180"/>
+<instance part="P+12" gate="VCC" x="881.38" y="-93.98" smashed="yes">
+<attribute name="VALUE" x="883.92" y="-91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="X_16" gate="G$1" x="942.34" y="-109.22" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10094,11 +10096,10 @@ Source: PIC24FJ64GA002.bsd</description>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="894.08" y1="-99.06" x2="878.84" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="-99.06" x2="881.38" y2="-99.06" width="0.1524" layer="91"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
-<wire x1="878.84" y1="-99.06" x2="881.38" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="878.84" y1="-96.52" x2="878.84" y2="-99.06" width="0.1524" layer="91"/>
-<junction x="878.84" y="-99.06"/>
+<wire x1="881.38" y1="-96.52" x2="881.38" y2="-99.06" width="0.1524" layer="91"/>
+<junction x="881.38" y="-99.06"/>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -10169,6 +10170,9 @@ Source: PIC24FJ64GA002.bsd</description>
 <junction x="894.08" y="-106.68"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<label x="944.88" y="-111.76" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="PIN1" class="0">
 <segment>
@@ -10226,6 +10230,12 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="X_11" gate="G$1" pin="0"/>
 <wire x1="863.6" y1="10.16" x2="871.22" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="871.22" y1="10.16" x2="871.22" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND2"/>
+<wire x1="939.8" y1="-104.14" x2="942.34" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="X_16" gate="G$1" pin="0"/>
+<wire x1="942.34" y1="-104.14" x2="942.34" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCLR" class="0">
@@ -10411,18 +10421,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="721.36" y1="40.64" x2="708.66" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="AN4/C1INB/DPLN/SDA2/RP2/PMD2/CN6/RB2"/>
-<wire x1="721.36" y1="25.4" x2="708.66" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="AN5/C1INA/DMLN/RTCC/SCL2/RP3/PMWR/CN7/RB3"/>
-<wire x1="721.36" y1="20.32" x2="708.66" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OSCI/CLKI/C1IND/PMCS1/CN30/RA2"/>
@@ -10481,6 +10479,20 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="IC3" gate="G$1" pin="TCK/USBOEN/SCL1/RP8/PMD4/CN22/RB8"/>
 <wire x1="850.9" y1="-5.08" x2="863.6" y2="-5.08" width="0.1524" layer="91"/>
 <label x="863.6" y="-2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPS_TX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="TX"/>
+<wire x1="939.8" y1="-78.74" x2="952.5" y2="-78.74" width="0.1524" layer="91"/>
+<label x="952.5" y="-76.2" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPS_RX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="RX"/>
+<wire x1="939.8" y1="-83.82" x2="952.5" y2="-83.82" width="0.1524" layer="91"/>
+<label x="952.5" y="-81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
