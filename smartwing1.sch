@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9392,7 +9392,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="075-032X103" package3d_urn="urn:adsk.eagle:package:23646/1" value="100nF"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -9569,7 +9568,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <attribute name="VALUE" x="917.956" y="-13.081" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+2" gate="VCC" x="896.62" y="71.12" smashed="yes" rot="R90" grouprefs="SERVO"/>
-<instance part="P+3" gate="VCC" x="792.48" y="167.64" smashed="yes" rot="R180" grouprefs="BRUSHLESS"/>
 <instance part="P+4" gate="VCC" x="568.96" y="43.18" smashed="yes" rot="R270" grouprefs="RX"/>
 <instance part="P+5" gate="VCC" x="899.16" y="12.7" smashed="yes" grouprefs="REST">
 <attribute name="VALUE" x="896.62" y="10.16" size="1.778" layer="96" rot="R90"/>
@@ -10327,13 +10325,9 @@ Source: PIC24FJ64GA002.bsd</description>
 <segment>
 </segment>
 <segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="792.48" y1="170.18" x2="792.48" y2="175.26" width="0.1524" layer="91" grouprefs="BRUSHLESS"/>
 <pinref part="ESC1" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="792.48" y1="175.26" x2="792.48" y2="187.96" width="0.1524" layer="91" grouprefs="BRUSHLESS"/>
-<junction x="792.48" y="175.26"/>
-<label x="792.48" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
