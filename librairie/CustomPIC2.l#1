@@ -194,7 +194,7 @@ package type P</description>
 <pin name="VSS@2" x="99.06" y="40.64" length="middle" direction="pwr" rot="R180"/>
 <pin name="VDD@2" x="99.06" y="45.72" length="middle" direction="pwr" rot="R180"/>
 <text x="33.02" y="2.54" size="1.778" layer="96" rot="R90">PIC24FJ64GB002</text>
-<text x="30.48" y="2.54" size="1.778" layer="95" rot="R90">IC3</text>
+<text x="30.48" y="2.54" size="1.778" layer="95" rot="R90">Name</text>
 </symbol>
 </symbols>
 <devicesets>
