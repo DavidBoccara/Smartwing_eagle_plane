@@ -9982,6 +9982,11 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="609.6" y1="50.8" x2="614.68" y2="50.8" width="0.1524" layer="91"/>
 <label x="614.68" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="OSCI/CLKI/C1IND/PMCS1/CN30/RA2"/>
+<wire x1="721.36" y1="10.16" x2="708.66" y2="10.16" width="0.1524" layer="91"/>
+<label x="706.12" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC2" class="0">
 <segment>
@@ -9996,6 +10001,11 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="CHANEL2" gate="G$1" pin="3"/>
 <wire x1="609.6" y1="40.64" x2="614.68" y2="40.64" width="0.1524" layer="91"/>
 <label x="614.68" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="OSCO/CLKO/PMA0/CN29/RA3"/>
+<wire x1="721.36" y1="5.08" x2="708.66" y2="5.08" width="0.1524" layer="91"/>
+<label x="706.12" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC3" class="0">
@@ -10012,12 +10022,22 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="609.6" y1="30.48" x2="614.68" y2="30.48" width="0.1524" layer="91"/>
 <label x="614.68" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="AN9/C3INA/VBUSCHG/RP15/VBUSST/CN11/RB15"/>
+<wire x1="850.9" y1="40.64" x2="863.6" y2="40.64" width="0.1524" layer="91"/>
+<label x="858.52" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PIN7" class="0">
 <segment>
 <pinref part="CHANEL4" gate="G$1" pin="3"/>
 <wire x1="609.6" y1="20.32" x2="614.68" y2="20.32" width="0.1524" layer="91"/>
 <label x="614.68" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="PGEC2/D-/VMIO/RP11/CN15/RB11"/>
+<wire x1="850.9" y1="20.32" x2="863.6" y2="20.32" width="0.1524" layer="91"/>
+<label x="858.52" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10027,27 +10047,13 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="850.9" y1="10.16" x2="855.98" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="OSCI/CLKI/C1IND/PMCS1/CN30/RA2"/>
-<wire x1="721.36" y1="10.16" x2="708.66" y2="10.16" width="0.1524" layer="91"/>
-<label x="706.12" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="OSCO/CLKO/PMA0/CN29/RA3"/>
-<wire x1="721.36" y1="5.08" x2="708.66" y2="5.08" width="0.1524" layer="91"/>
-<label x="706.12" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="VBUS"/>
 <wire x1="850.9" y1="-15.24" x2="863.6" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="PIN8" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="TDI/RP7/PMD5/INT0/CN23/RB7"/>
 <wire x1="850.9" y1="-10.16" x2="863.6" y2="-10.16" width="0.1524" layer="91"/>
@@ -10150,11 +10156,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="939.8" y1="45.72" x2="924.56" y2="45.72" width="0.1524" layer="91" grouprefs="UART"/>
 <label x="927.1" y="45.72" size="1.778" layer="95" grouprefs="UART"/>
 </segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="AN9/C3INA/VBUSCHG/RP15/VBUSST/CN11/RB15"/>
-<wire x1="850.9" y1="40.64" x2="863.6" y2="40.64" width="0.1524" layer="91"/>
-<label x="858.52" y="40.64" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TXD" class="0">
 <segment>
@@ -10185,11 +10186,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="JP2" gate="B" pin="2"/>
 <wire x1="939.8" y1="35.56" x2="924.56" y2="35.56" width="0.1524" layer="91" grouprefs="UART"/>
 <label x="927.1" y="35.56" size="1.778" layer="95" grouprefs="UART"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="PGEC2/D-/VMIO/RP11/CN15/RB11"/>
-<wire x1="850.9" y1="20.32" x2="863.6" y2="20.32" width="0.1524" layer="91"/>
-<label x="858.52" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
