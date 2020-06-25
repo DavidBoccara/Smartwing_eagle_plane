@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10392,13 +10392,6 @@ Source: PIC24FJ64GA002.bsd</description>
 <wire x1="850.9" y1="-15.24" x2="863.6" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PIN8" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="TDI/RP7/PMD5/INT0/CN23/RB7"/>
-<wire x1="850.9" y1="-10.16" x2="863.6" y2="-10.16" width="0.1524" layer="91"/>
-<label x="858.52" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
@@ -10808,6 +10801,12 @@ Source: PIC24FJ64GA002.bsd</description>
 <pinref part="U7" gate="A" pin="B"/>
 <wire x1="650.24" y1="17.78" x2="660.4" y2="17.78" width="0.1524" layer="91" grouprefs="REHAUSSEUR_DE_TENSION_5V_VERS_3V3"/>
 <label x="655.32" y="15.24" size="1.778" layer="95" grouprefs="REHAUSSEUR_DE_TENSION_5V_VERS_3V3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="TDI/RP7/PMD5/INT0/CN23/RB7"/>
+<wire x1="850.9" y1="-10.16" x2="863.6" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

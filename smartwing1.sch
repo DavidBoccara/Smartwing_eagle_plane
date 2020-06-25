@@ -9634,6 +9634,7 @@ Source: PIC24FJ64GA002.bsd</description>
 <text x="909.32" y="-55.88" size="1.778" layer="91">GPS</text>
 <text x="800.1" y="-50.8" size="1.778" layer="91">MPL115</text>
 <text x="683.26" y="-58.42" size="1.778" layer="91">SEN0142</text>
+<text x="751.84" y="-25.4" size="1.778" layer="91">PROG</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="487.68" y="-203.2" smashed="yes"/>

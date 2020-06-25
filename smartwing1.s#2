@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9397,6 +9397,18 @@ Source: PIC24FJ64GA002.bsd</description>
 <text x="563.88" y="162.56" size="1.778" layer="96">100nF</text>
 <text x="596.9" y="160.02" size="1.778" layer="96">100nF</text>
 <text x="579.12" y="162.56" size="1.778" layer="96">100nF</text>
+<text x="553.72" y="81.28" size="1.778" layer="91">RX</text>
+<text x="609.6" y="121.92" size="1.778" layer="91">REHAUSSEUR_DE_TENSION_5V_VERS_3V3</text>
+<text x="546.1" y="195.58" size="1.778" layer="91">ALIM1</text>
+<text x="589.28" y="198.12" size="1.778" layer="91">ALIM</text>
+<text x="792.48" y="213.36" size="1.778" layer="91">BRUSHLESS</text>
+<text x="772.16" y="152.4" size="1.778" layer="91">REHAUSSEUR_DE_TENSION_3V3_VERS_5V</text>
+<text x="911.86" y="109.22" size="1.778" layer="91">SERVO</text>
+<text x="916.94" y="55.88" size="1.778" layer="91">FTDI1</text>
+<text x="922.02" y="12.7" size="1.778" layer="91">REST</text>
+<text x="909.32" y="-55.88" size="1.778" layer="91">GPS</text>
+<text x="800.1" y="-50.8" size="1.778" layer="91">MPL115</text>
+<text x="683.26" y="-58.42" size="1.778" layer="91">SEN0142</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="487.68" y="-203.2" smashed="yes"/>
